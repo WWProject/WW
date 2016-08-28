@@ -1,0 +1,302 @@
+package com.example.manon.testww;
+
+import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View.OnClickListener;
+import android.view.View.*;
+import android.graphics.BitmapFactory;
+
+import android.os.Bundle;
+
+import android.app.Activity;
+
+import android.view.View;
+
+import android.widget.Button;
+
+import android.widget.ImageView;
+
+import java.io.IOException;
+
+public class MainActivity extends AppCompatActivity implements OnClickListener {
+
+    private android.widget.Button button1 = null;
+    private android.widget.Button button2 = null;
+    private android.widget.Button button3 = null;
+    private android.widget.Button button4 = null;
+    private android.widget.Button button5 = null;
+    private android.widget.Button button6 = null;
+    private android.widget.Button button7 = null;
+    private android.widget.Button button8 = null;
+    private android.widget.Button button9 = null;
+    private android.widget.Button button10 = null;
+    private android.widget.Button button11 = null;
+    private android.widget.Button button12 = null;
+    private android.widget.Button button13 = null;
+    private android.widget.Button button14 = null;
+    private android.widget.Button button15 = null;
+    private android.widget.Button button16 = null;
+    private android.widget.Button button17 = null;
+    private android.widget.Button button18 = null;
+
+    private boolean isButton1Pressed = false;
+    private boolean isButton2Pressed = false;
+    private boolean isButton3Pressed = false;
+    private boolean isButton4Pressed = false;
+    private boolean isButton5Pressed = false;
+    private boolean isButton6Pressed = false;
+    private boolean isButton7Pressed = false;
+    private boolean isButton8Pressed = false;
+    private boolean isButton9Pressed = false;
+    private boolean isButton10Pressed = false;
+    private boolean isButton11Pressed = false;
+    private boolean isButton12Pressed = false;
+    private boolean isButton13Pressed = false;
+    private boolean isButton14Pressed = false;
+    private boolean isButton15Pressed = false;
+    private boolean isButton16Pressed = false;
+    private boolean isButton17Pressed = false;
+    private boolean isButton18Pressed = false;
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        button1 = (android.widget.Button) findViewById(R.id.button1);
+        button2 = (android.widget.Button) findViewById(R.id.button2);
+        button3 = (android.widget.Button) findViewById(R.id.button3);
+        button4 = (android.widget.Button) findViewById(R.id.button4);
+        button5 = (android.widget.Button) findViewById(R.id.button5);
+        button6 = (android.widget.Button) findViewById(R.id.button6);
+        button7 = (android.widget.Button) findViewById(R.id.button7);
+        button8 = (android.widget.Button) findViewById(R.id.button8);
+        button9 = (android.widget.Button) findViewById(R.id.button9);
+        button10 = (android.widget.Button) findViewById(R.id.button10);
+        button11 = (android.widget.Button) findViewById(R.id.button11);
+        button12 = (android.widget.Button) findViewById(R.id.button12);
+        button13 = (android.widget.Button) findViewById(R.id.button13);
+        button14 = (android.widget.Button) findViewById(R.id.button14);
+        button15 = (android.widget.Button) findViewById(R.id.button15);
+        button16 = (android.widget.Button) findViewById(R.id.button16);
+        button17 = (android.widget.Button) findViewById(R.id.button17);
+        button18 = (android.widget.Button) findViewById(R.id.button18);
+
+        button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
+        button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
+        button5.setOnClickListener(this);
+        button6.setOnClickListener(this);
+        button7.setOnClickListener(this);
+        button8.setOnClickListener(this);
+        button9.setOnClickListener(this);
+        button10.setOnClickListener(this);
+        button11.setOnClickListener(this);
+        button12.setOnClickListener(this);
+        button13.setOnClickListener(this);
+        button14.setOnClickListener(this);
+        button15.setOnClickListener(this);
+        button16.setOnClickListener(this);
+        button17.setOnClickListener(this);
+        button18.setOnClickListener(this);
+
+        // FIN - Activation des boutons
+    }
+    @Override
+    public void onClick(android.view.View v){
+
+        switch(v.getId()) {
+            case R.id.button1:
+                if(isButton1Pressed == false){
+                    button1.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton1Pressed = true;
+                }else{
+                    button1.setBackgroundResource(R.mipmap.small_button);
+                    isButton1Pressed = false;
+                }
+                break;
+
+            case R.id.button2:
+                if(isButton2Pressed == false){
+                    button2.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton2Pressed = true;
+                }else{
+                    button2.setBackgroundResource(R.mipmap.small_button);
+                    isButton2Pressed = false;
+                }
+                break;
+
+            case R.id.button3:
+                if(isButton3Pressed == false){
+                    button3.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton3Pressed = true;
+                }else{
+                    button3.setBackgroundResource(R.mipmap.small_button);
+                    isButton3Pressed = false;
+                }
+                break;
+
+            case R.id.button4:
+                if(isButton4Pressed == false){
+                    button4.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton4Pressed = true;
+                }else{
+                    button4.setBackgroundResource(R.mipmap.small_button);
+                    isButton4Pressed = false;
+                }
+                break;
+
+            case R.id.button5:
+                if(isButton5Pressed == false){
+                    button5.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton5Pressed = true;
+                }else{
+                    button5.setBackgroundResource(R.mipmap.small_button);
+                    isButton5Pressed = false;
+                }
+                break;
+
+            case R.id.button6:
+                if(isButton6Pressed == false){
+                    button6.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton6Pressed = true;
+                }else{
+                    button6.setBackgroundResource(R.mipmap.small_button);
+                    isButton6Pressed = false;
+                }
+                break;
+
+            case R.id.button7:
+                if(isButton7Pressed == false){
+                    button7.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton7Pressed = true;
+                }else{
+                    button7.setBackgroundResource(R.mipmap.small_button);
+                    isButton7Pressed = false;
+                }
+                break;
+
+            case R.id.button8:
+                if(isButton8Pressed == false){
+                    button8.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton8Pressed = true;
+                }else{
+                    button8.setBackgroundResource(R.mipmap.small_button);
+                    isButton8Pressed = false;
+                }
+                break;
+
+            case R.id.button9:
+                if(isButton9Pressed == false){
+                    button9.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton9Pressed = true;
+                }else{
+                    button9.setBackgroundResource(R.mipmap.small_button);
+                    isButton9Pressed = false;
+                }
+                break;
+
+            case R.id.button10:
+                if(isButton10Pressed == false){
+                    button10.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton10Pressed = true;
+                }else{
+                    button10.setBackgroundResource(R.mipmap.small_button);
+                    isButton10Pressed = false;
+                }
+                break;
+
+            case R.id.button11:
+                if(isButton11Pressed == false){
+                    button11.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton11Pressed = true;
+                }else{
+                    button11.setBackgroundResource(R.mipmap.small_button);
+                    isButton11Pressed = false;
+                }
+                break;
+
+            case R.id.button12:
+                if(isButton12Pressed == false){
+                    button12.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton12Pressed = true;
+                }else{
+                    button12.setBackgroundResource(R.mipmap.small_button);
+                    isButton12Pressed = false;
+                }
+                break;
+
+
+            case R.id.button13:
+                if(isButton13Pressed == false){
+                    button13.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton13Pressed = true;
+                }else{
+                    button13.setBackgroundResource(R.mipmap.small_button);
+                    isButton13Pressed = false;
+                }
+                break;
+
+
+            case R.id.button14:
+                if(isButton14Pressed == false){
+                    button14.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton14Pressed = true;
+                }else{
+                    button14.setBackgroundResource(R.mipmap.small_button);
+                    isButton14Pressed = false;
+                }
+                break;
+
+            case R.id.button15:
+                if(isButton15Pressed == false){
+                    button15.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton15Pressed = true;
+                }else{
+                    button15.setBackgroundResource(R.mipmap.small_button);
+                    isButton15Pressed = false;
+                }
+                break;
+
+            case R.id.button16:
+                if(isButton16Pressed == false){
+                    button16.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton16Pressed = true;
+                }else{
+                    button16.setBackgroundResource(R.mipmap.small_button);
+                    isButton16Pressed = false;
+                }
+                break;
+
+            case R.id.button17:
+                if(isButton17Pressed == false){
+                    button17.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton17Pressed = true;
+                }else{
+                    button17.setBackgroundResource(R.mipmap.small_button);
+                    isButton17Pressed = false;
+                }
+                break;
+
+            case R.id.button18:
+                if(isButton18Pressed == false){
+                    button18.setBackgroundResource(R.mipmap.small_button_pressed);
+                    isButton18Pressed = true;
+                }else{
+                    button18.setBackgroundResource(R.mipmap.small_button);
+                    isButton18Pressed = false;
+                }
+                break;
+        }
+
+
+    }
+
+
+
+    }
