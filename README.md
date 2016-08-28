@@ -1,2 +1,0 @@
-# WW
-WW - First Test
